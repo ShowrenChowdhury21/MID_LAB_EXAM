@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/employee.css">
+		<meta charset="utf-8">
+		<title>Employee</title>
+	</head>
+	<style>
+	.employee{
+	width: 350px;
+	margin: 0 auto;
+	margin-top : 220px;
+	font-family: sans-serif;
+	}
+.employee h1 {
+	text-align: left;
+	color: #4d4d4d;
+	font-size: 40px;
+	padding: 20px 0 20px 0;
+	}
+
+.employee input[type = submit] {
+	width: 100%;
+	padding: 15px;
+	background-color: #2980B9;
+	border: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-weight: bold;
+	color: #ffffff;
+	margin-top: 40px;
+	margin-bottom: -20px;
+}
+
+.employee input[type = submit]:hover {
+  	background-color: #154360;
+  	color: white;
+}
+hr.line {
+  	border-top: 1.5px solid #2980B9;
+	margin-bottom: 20px;
+	margin-top: -40px;
+}
+a {
+  background-color: #2980B9;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+	margin-left : 120px;
+}
+	</style>
+	<body>
+		<div class="employee">
+			<h1>Welcome To Employee Dashboard</h1>
+			<hr class="line">
+			<form action="" method="POST">
+				<input type="submit" name="option" value="My profile">
+        <input type="submit" name="option" value="Update profile">
+				<br><br><br><br>
+				<a href='/logout'>Logout</a>
+			</form>
+		</div>
+	</body>
+</html>

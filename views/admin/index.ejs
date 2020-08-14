@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Admin</title>
+	</head>
+	<style>
+	.admin {
+		width: 350px;
+		margin: 0 auto;
+		margin-top : 220px;
+		font-family: sans-serif;
+		}
+		.admin h1 {
+		text-align: left;
+		color: #4d4d4d;
+		font-size: 40px;
+		padding: 20px 0 20px 0;
+		}
+
+		.admin input[type=submit]{
+		width: 100%;
+		padding: 15px;
+		background-color: #2980B9;
+		border: 0;
+		box-sizing: border-box;
+		cursor: pointer;
+		font-weight: bold;
+		color: #ffffff;
+		margin-top: 40px;
+		margin-bottom: -20px;
+		}
+
+		.admin input[type=submit]:hover {
+			background-color: #154360;
+			color: white;
+		}
+		hr.line {
+			border-top: 1.5px solid #2980B9;
+		margin-bottom: 20px;
+		margin-top: -40px;
+		}
+		a {
+		  background-color: #2980B9;
+		  color: white;
+		  padding: 1em 1.5em;
+		  text-decoration: none;
+		  text-transform: uppercase;
+			margin-left : 120px;
+		}
+	</style>
+	<body>
+		<div class="admin">
+			<h1>Welcome To Admin Dashboard</h1>
+			<hr class="line">
+			<form action="" method="POST">
+				<input type="submit" name="option" value = "Add employee">
+        <input type="submit" name="option" value = "All employees list">
+				<br><br><br><br>
+				<a href='/logout'>Logout</a>
+			</form>
+		</div>
+	</body>
+</html>
