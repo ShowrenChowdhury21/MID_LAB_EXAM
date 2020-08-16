@@ -18,7 +18,7 @@
 		padding: 20px 0 20px 0;
 		}
 
-		.admin input[type=submit]{
+		.admin input[type=button]{
 		width: 100%;
 		padding: 15px;
 		background-color: #2980B9;
@@ -31,7 +31,7 @@
 		margin-bottom: -20px;
 		}
 
-		.admin input[type=submit]:hover {
+		.admin input[type=button]:hover {
 			background-color: #154360;
 			color: white;
 		}
@@ -51,11 +51,11 @@
 	</style>
 	<body>
 		<div class="admin">
-			<h1>Welcome To Admin Dashboard</h1>
+			<h1>Welcome <%= uname %></h1>
 			<hr class="line">
 			<form action="" method="POST">
-				<input type="submit" name="option" value = "Add employee">
-        <input type="submit" name="option" value = "All employees list">
+				<input type="button" name="option" value = "Add employee" onclick="window.location.href='/admin/addemployee';">
+        <input type="button" name="option" value = "All employees list" onclick="window.location.href='/admin/allemployeeslist';">
 				<br><br><br><br>
 				<a href='/logout'>Logout</a>
 			</form>

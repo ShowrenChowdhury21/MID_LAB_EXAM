@@ -19,7 +19,7 @@
 	padding: 20px 0 20px 0;
 	}
 
-.employee input[type = submit] {
+.employee input[type = button] {
 	width: 100%;
 	padding: 15px;
 	background-color: #2980B9;
@@ -32,7 +32,7 @@
 	margin-bottom: -20px;
 }
 
-.employee input[type = submit]:hover {
+.employee input[type = button]:hover {
   	background-color: #154360;
   	color: white;
 }
@@ -52,11 +52,11 @@ a {
 	</style>
 	<body>
 		<div class="employee">
-			<h1>Welcome To Employee Dashboard</h1>
+			<h1>Welcome <%= uname %></h1>
 			<hr class="line">
 			<form action="" method="POST">
-				<input type="submit" name="option" value="My profile">
-        <input type="submit" name="option" value="Update profile">
+				<input type="button" name="option" value = "My Profile" onclick="window.location.href='/employee/myprofile';">
+        <input type="button" name="option" value = "Update Profile" onclick="window.location.href='/employee/updateprofile';">
 				<br><br><br><br>
 				<a href='/logout'>Logout</a>
 			</form>
